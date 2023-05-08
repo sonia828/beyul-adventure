@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --logo: url('./images/logobeyul.jpeg');
+
+    --bg_khu: url('./images/khumbu.jpeg');
+    --bg_manas: url('./images/camp.jpeg');
+    --bg_kanch: url('./images/camp2.jpeg');
+    --bg_dolpa: url('./images/sunrise.jpeg');
+    --bg_must: url('./images/stupaa.jpeg');
+    --bg_lang: url('./images/himal.JPG');
+
+    --bg_gal1: url('./images/camp2.jpeg');
+    --bg_gal2: url('./images/cloud.jpeg');
+    --bg_gal3: url('./images/lakerr.jpeg');
+    --bg_gal4: url('./images/trekkers.jpeg');
+    
+  }
+
+*{
+    font-family: 'Palanquin', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.logo {
+    /* @apply bg-center bg-repeat; */
+    @apply bg-cover;
+    background-image: var(--logo);
+}
+
+.bg-banner{
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6) ), var(--bg_lang);
+}
+
+.bg-login{
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6) ), var(--bg_kanch);
+}
+
+.bg-khumbu {
+    /* @apply bg-center bg-repeat; */
+    @apply bg-cover;
+    background-image: var(--bg_khu);
+}
+
+.bg-lang {
+    /* @apply bg-center bg-repeat; */
+    @apply bg-cover;
+    background-image: var(--bg_lang);
+}
+
+.bg-kanch {
+    /* @apply bg-center bg-repeat; */
+    @apply bg-cover;
+    background-image: var(--bg_kanch);
+}
+
+.bg-manas {
+    /* @apply bg-center bg-repeat; */
+    @apply bg-cover;
+    background-image: var(--bg_manas);
+}
+
+.bg-must {
+    /* @apply bg-center bg-repeat; */
+    @apply bg-cover;
+    background-image: var(--bg_must);
+}
+
+.bg-dolpa {
+    /* @apply bg-center bg-repeat; */
+    @apply bg-cover;
+    background-image: var(--bg_dolpa);
+}
+
+.bg-gal1 {
+    /* @apply bg-center bg-repeat; */
+    @apply bg-cover;
+    background-image: var(--bg_gal1);
+}
+
+.bg-gal2 {
+    /* @apply bg-center bg-repeat; */
+    @apply bg-cover;
+    background-image: var(--bg_gal2);
+}
+
+.bg-gal3 {
+    /* @apply bg-center bg-repeat; */
+    @apply bg-cover;
+    background-image: var(--bg_gal3);
+}
+
+.bg-gal4 {
+    /* @apply bg-center bg-repeat; */
+    @apply bg-cover;
+    background-image: var(--bg_gal4);
+}
+
+
+.cust {
+    -webkit-transition: width 0.2s, height 0.2s;
+    transition: width 0.2s, height 0.2s;
+}
+.cust:hover {
+    width: 25rem;
+    height: 25rem;
+    z-index: 69;  
+}
+
